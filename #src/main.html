@@ -1,0 +1,273 @@
+<html lang="ru">
+    <%- include("partials/head.ejs") %>
+    <body>
+        <div class="wrap">
+
+            <%- include("partials/header.ejs") %>
+            <main>
+                <!-- banner-->
+                <section class="banner">
+                    <div class="banner__carousel">
+                        <div class="item">
+                            <picture>
+                                <source type="image/webp" media="(max-width: 575px)" srcset="img/Sortimentovoz.webp">
+                                <source type="image/webp" media="(max-width: 1309px)" srcset="img/Sortimentovoz.webp">
+                                <source type="image/webp" srcset="img/Sortimentovoz.webp">
+                                <img src="img/Container.jpg" alt>
+                            </picture>
+                        </div>
+
+                        <div class="item">
+                            <picture>
+                                <source type="image/webp" media="(max-width: 575px)" srcset="img/Sortimentovoz.webp">
+                                <source type="image/webp" media="(max-width: 1309px)" srcset="img/Sortimentovoz.webp">
+                                <source type="image/webp" srcset="img/Sortimentovoz.webp">
+                                <img src="img/Container.jpg" alt>
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="banner__row">
+                            <div class="banner__text">
+                                <h1>Грузовые полуприцепы</h1>
+                                <p class="h1">Европейского стандарта</p>
+                                <p>От надёжных производителей, без дополнительных вложений</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- info-->
+                <div class="info">
+                    <div class="container">
+                        <div class="info__row">
+                            <div class="info__center">
+                                <a class="js-modal-show" data-target="#js-modal-sert"><img src="img/new/skeleton.svg"></a>
+                                <a class="js-modal-show" data-target="#js-modal-sert2"><img src="img/new/skeleton.svg"></a>
+                                <a class="js-modal-show" data-target="#js-modal-sert3"><img src="img/new/skeleton.svg"></a>
+                                <a class="js-modal-show" data-target="#js-modal-sert4"><img src="img/new/skeleton.svg"></a>
+                                <a class="js-modal-show" data-target="#js-modal-sert5"><img src="img/new/skeleton.svg"></a>
+
+                            </div>
+                            <div class="info__right">
+                                <div><span>60</span>
+                                    <p>официальных сервисных центров</p>
+                                </div>
+                                <div><span>3</span>
+                                    <p>офиса продаж: Нижний Новгород, Санкт-Петербург, Великий Новгород</p>
+                                </div><a href="o-kompanii.html">Узнать больше о компании</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <%- include("partials/advant.ejs") %>
+                <!--text-block-->
+                <section class="mb-120 text-block text-block--info">
+                    <div class="container">
+                        <div class="page-content">
+                            <p>Официальный дилер заводов Тонар, Braver, SteelBear и ИнтерПрицеп. Более 80 моделей полуприцепов в наличии и под заказ — с отгрузкой со склада в
+                                Нижнем
+                                Новгороде, Москве и Санкт-Петербурге. Прямые цены без посредников, лизинг и кредит. </p>
+                        </div>
+                    </div>
+                </section>
+                <!-- instock-->
+                <section class="mb-120 instock">
+                    <div class="container">
+                        <h2 class="instock__title">Техника в наличии</h2>
+                        <div class="instock__row">
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                        </div>
+                        <div class="sec-bottom"><a class="text-btn" href="#">Смотреть все </a></div>
+                    </div>
+                </section>
+                <%- include("partials/geo-map.ejs") %>
+                <!--catalog-->
+                <section class="mb-120 catalog">
+                    <div class="container">
+                        <h2 class="category__title">Популярные категории</h2>
+                        <p class="category__desc">Популярные категории полуприцепов с высокой доступностью и спросом.</p>
+                        <div class="catalog__row">
+                            <a class="catalog__item" href="sortimentovozy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Полуприцепы сортиментовозы"
+                                        title="Полуприцепы сортиментовозы">
+                                </div>
+                                <p class="catalog__name">Полуприцепы сортиментовозы</p>
+                                <p class="catalog__desc">Для транспортировки различного вида сортимента: лесоматериалы, трубопрокатная продукция</p>
+                            </a>
+                            <a class="catalog__item" href="kontejnerovozy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Полуприцепы контейнеровозы"
+                                        title="Полуприцепы контейнеровозы">
+                                </div>
+                                <p class="catalog__name">Полуприцепы контейнеровозы</p>
+                                <p class="catalog__desc">Для транспортировки контейнеров различной модификации от 20 до 45 футов</p>
+                            </a>
+                            <a class="catalog__item" href="tentovye-polupricepy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Тентовые полуприцепы" title="Тентовые полуприцепы">
+                                </div>
+                                <p class="catalog__name">Тентовые полуприцепы</p>
+                                <p class="catalog__desc">Для транспортировки различных видов груза</p>
+                            </a>
+                            <a class="catalog__item" href="bortovye-polupricepy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Бортовые полуприцепы" title="Бортовые полуприцепы">
+                                </div>
+                                <p class="catalog__name">Бортовые полуприцепы</p>
+                                <p class="catalog__desc">Для транспортировки различных видов груза</p>
+                            </a>
+                            <a class="catalog__item" href="polupricepy-zernovozy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Полуприцепы зерновозы" title="Полуприцепы зерновозы">
+                                </div>
+                                <p class="catalog__name">Полуприцепы зерновозы</p>
+                                <p class="catalog__desc">Для транспортировки зерна и других сыпучих пищевых грузов</p>
+                            </a>
+                            <a class="catalog__item" href="polupricepy-tyazhelovozy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Полуприцепы тяжеловозы тралы" title="Полуприцепы тяжеловозы тралы">
+                                </div>
+                                <p class="catalog__name">Полуприцепы тяжеловозы тралы</p>
+                                <p class="catalog__desc">Для транспортировки различной строительной техники и негабаритных грузов</p>
+                            </a>
+                        </div>
+                        <div class="sec-bottom"><a class="text-btn" href="#">Смотреть все категории</a></div>
+                    </div>
+                </section>
+                <!-- callback-->
+                <div class="mb-120 callback">
+                    <div class="container">
+                        <div class="callback__row">
+                            <div class="callback__col">
+                                <p class="callback__title">Мы расскажем какой лучше прицеп выбрать для коммерческой деятельности с учётом особенностей Ваших перевозок.</p>
+                                <!-- callback-form-->
+                                <div class="callback-form">
+                                    <p class="callback-form__text">Оставьте телефон и мы свяжемся с вами в течение 15 минут.</p>
+                                    <a class="h-phones__callback" href="zakazat-zvonok.html">Заказать звонок</a>
+                                </div>
+                                <!-- end callback-form-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- m-news-->
+                <section class="mb-120 m-news">
+                    <div class="container">
+                        <h2 class="m-news__title">Новости</h2>
+                        <div class="m-news__row">
+                            <a class="m-news__item" href="#">
+                                <div class="m-news__img">
+                                    <img src="img/new/news-1.jpg">
+                                </div>
+                                <div class="m-news__desc">
+                                    <h3>С Международным женским днём 8 Марта!</h3>
+                                    <p>Поздравляем наших клиентов и партнёров с праздником весны!</p>
+                                    <time datetime="16&nbsp;марта&nbsp;2026">16&nbsp;марта&nbsp;2026</time>
+                                    <div class="m-news__more"><span>Читать подробнее</span>
+                                        <svg>
+                                            <use href="img/icons/sprite.svg#arr-next"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="m-news__item" href="#">
+                                <div class="m-news__img">
+                                    <img src="img/new/news-1.jpg">
+                                </div>
+                                <div class="m-news__desc">
+                                    <h3>Поздравляем Вас с Днем защитника Отечества!</h3>
+                                    <p>Желаем надёжности и стойкости — как у нашей техники!</p>
+                                    <time datetime="16&nbsp;марта&nbsp;2026">16&nbsp;марта&nbsp;2026</time>
+                                    <div class="m-news__more"><span>Читать подробнее</span>
+                                        <svg>
+                                            <use href="img/icons/sprite.svg#arr-next"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="m-news__item" href="#">
+                                <div class="m-news__img">
+                                    <img src="img/new/news-1.jpg">
+                                </div>
+                                <div class="m-news__desc">
+                                    <h3>Полуприцепы лесовозы Braver — эффективность,
+                                        проверенная суровыми условиями!</h3>
+                                    <p>Работают при -40°C, выдерживают нагрузку до 40 тонн.</p>
+                                    <time datetime="16&nbsp;марта&nbsp;2026">16&nbsp;марта&nbsp;2026</time>
+                                    <div class="m-news__more"><span>Читать подробнее</span>
+                                        <svg>
+                                            <use href="img/icons/sprite.svg#arr-next"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="m-news__all"><a href="#">Все новости</a></div>
+                    </div>
+                </section>
+                <!-- about-->
+                <div class="mb-120 about">
+                    <div class="container">
+                        <div class="about__row">
+                            <p class="about__title">О нас</p>
+                            <div class="about__left"> <a class="about__video" href="video/video-katalog-ooo-gruzovye-pricepy.mp4" data-fancybox> <img
+                                        src="img/icons/icon-video.svg"><span>Видео каталог ООО "Грузовые прицепы"</span></a></div>
+                            <div class="about__right">
+                                <h1>Купить новый полуприцеп?</h1>
+                                <p><strong>3 Мифа о покупке полуприцепов у дилеров:</strong></p>
+                                <ul>
+                                    <li>Миф №1 – Покупка у дилера выйдет дороже! Это неправда. Конкуренция между дилерами высока, поэтому торгующие организации вынуждены
+                                        бороться за клиентов: предоставляя скидки, подарки и выгодные условия.</li>
+                                    <li>Миф №2 – Мне продадут не то, что нужно! Это тоже неверно. 18 лет опыта работы в прицепостроении и продажах прицепной техники – мощная
+                                        гарантия, что вы получите качественную технику, точно соответствующую Вашим пожеланиям и потребностям.</li>
+                                    <li>Миф №3 – Дилеры продают «воздух»! И это большое заблуждение. Мы приобретаем полуприцепы для Вас заранее, чтобы вы получили технику в
+                                        наличии.&nbsp; А также авансируем прицепы, чтобы у Вас был минимальный срок изготовления и минимальный аванс.</li>
+                                </ul>
+                                <p><strong>3 Правды о покупке полуприцепов у дилера ООО "Грузовые Прицепы":</strong></p>
+                                <ul>
+                                    <li>Правда №1 – Доверительные отношения с клиентами.&nbsp; Наши покупатели зачастую становятся нашими друзьями и товарищами надолго! И мы
+                                        помогаем им с последующей вторичной реализацией прицепной техники.</li>
+                                    <li>Правда №2 – Вы приобретаете полуприцепы периодически, а для нас это каждодневная работа на протяжении 18 лет. Поэтому сотрудничая с
+                                        нами, Вы получите полную актуальную картину о рынке прицепной технике, его новинках трендах и тенденциях.</li>
+                                    <li>Правда №3 – Доверившись нам Вы сможете сэкономить свои деньги и время на покупках полуприцепов!</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <%- include("partials/faq.ejs", {title: "Часто задаваемые вопросы"}) %>
+            </main>
+            <%- include("partials/footer.ejs") %>
+        </div>
+        <%- include("partials/modals.ejs") %>
+        <%- include("partials/js.ejs") %>
+
+    </body>
+</html>

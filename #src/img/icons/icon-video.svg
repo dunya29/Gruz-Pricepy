@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141" height="142" viewBox="0 0 141 142">
+    <defs>
+        <mask id="b" width="2" height="2" x="-1" y="-1">
+            <path fill="#fff" d="M30 23h81v81H30z"/>
+            <path d="M110.612 63.201c0 22.153-17.958 40.111-40.11 40.111-22.154 0-40.112-17.958-40.112-40.11 0-22.154 17.958-40.112 40.111-40.112s40.111 17.958 40.111 40.111z"/>
+        </mask>
+        <filter id="a" width="157" height="161" x="-8" y="-15" filterUnits="userSpaceOnUse">
+            <feOffset dy="4" in="SourceGraphic" result="FeOffset1025Out"/>
+            <feGaussianBlur in="FeOffset1025Out" result="FeGaussianBlur1026Out" stdDeviation="11.2 11.2"/>
+        </filter>
+        <clipPath id="c">
+            <path fill="#fff" d="M110.612 63.201c0 22.153-17.958 40.111-40.11 40.111-22.154 0-40.112-17.958-40.112-40.11 0-22.154 17.958-40.112 40.111-40.112s40.111 17.958 40.111 40.111z"/>
+        </clipPath>
+    </defs>
+    <g filter="url(#a)">
+        <path fill="none" d="M110.612 63.201c0 22.153-17.958 40.111-40.11 40.111-22.154 0-40.112-17.958-40.112-40.11 0-22.154 17.958-40.112 40.111-40.112s40.111 17.958 40.111 40.111z" mask="url(&quot;#b&quot;)"/>
+        <path fill="#fff" fill-opacity=".25" d="M110.612 63.201c0 22.153-17.958 40.111-40.11 40.111-22.154 0-40.112-17.958-40.112-40.11 0-22.154 17.958-40.112 40.111-40.112s40.111 17.958 40.111 40.111z"/>
+    </g>
+    <path fill="none" stroke="#fff" stroke-miterlimit="50" stroke-width="6" d="M110.612 63.201c0 22.153-17.958 40.111-40.11 40.111-22.154 0-40.112-17.958-40.112-40.11 0-22.154 17.958-40.112 40.111-40.112s40.111 17.958 40.111 40.111z" clip-path="url(&quot;#c&quot;)"/>
+    <g>
+        <path fill="#fff" d="M62.22 76.294V50.37l24.393 12.962z"/>
+    </g>
+</svg>

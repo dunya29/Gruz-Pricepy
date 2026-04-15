@@ -1,0 +1,49 @@
+<!-- cta-block -->
+<section class="mb-120 cta-block">
+    <div class="container">
+        <div class="cta-block__inner">
+            <div class="cta-block__content">
+                <div class="sec-top">
+                    <h2 class="sec-title"><%- title %></h2>
+                </div>
+                <div class="cta-block__text">
+                    <%- text %>
+                </div>
+                <div class="cta-block__btns">
+                    <%- btns %>
+                </div>
+            </div>
+            <% if (info === true) { %>
+            <div class="cta-block__info">
+                <div class="info-cta">
+                    <div class="info-cta__icon">
+                        <img src="img/icons/delivery.svg" alt>
+                    </div>
+                    <p>Доставка по РФ</p>
+                </div>
+                <div class="info-cta">
+                    <div class="info-cta__icon">
+                        <img src="img/icons/garanty.svg" alt>
+                    </div>
+                    <p>Гарантия</p>
+                </div>
+                <div class="info-cta">
+                    <div class="info-cta__icon">
+                        <img src="img/icons/time.svg" alt>
+                    </div>
+                    <p>Короткие сроки</p>
+                </div>
+                <div class="info-cta">
+                    <div class="info-cta__icon">
+                        <img src="img/icons/leasing.svg" alt>
+                    </div>
+                    <p>Лизинг</p>
+                </div>
+            </div>
+            <% } %>
+            <div class="cta-block__img">
+                <img src="img/new/<%= img %>.png" alt>
+            </div>
+        </div>
+    </div>
+</section>

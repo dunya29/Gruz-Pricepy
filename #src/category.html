@@ -1,0 +1,217 @@
+<html lang="ru">
+    <%- include("partials/head.ejs") %>
+    <body>
+        <div class="wrap">
+
+            <%- include("partials/header.ejs") %>
+            <main>
+                <section class="mb-120 catalog">
+                    <div class="container">
+                        <!-- breadcrumbs-->
+                        <div class="breadcrumbs">
+                            <ul itemscope itemtype="http://schema.org/BreadcrumbList">
+
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><meta itemprop="position" content="1">
+                                    <a href="/" title="Главная" itemprop="item">
+                                        <span itemprop="name">Грузовые Прицепы</span>
+                                    </a>
+                                </li>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><meta itemprop="position" content="2">
+                                    <a href="produkciya.html" title="Полуприцепы" itemprop="item">
+                                        <span itemprop="name">
+                                            Полуприцепы
+                                        </span>
+                                    </a>
+                                </li>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><meta itemprop="position" content="3">
+                                    <a href="sortimentovozy.html" title="Полуприцепы сортиментовозы (лесовозы)" itemprop="item">
+                                        <span itemprop="name">
+                                            Полуприцепы сортиментовозы (лесовозы)
+                                        </span>
+                                    </a>
+                                </li>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                    <meta itemprop="position" content="4">
+                                    <span itemprop="item">STEELBEAR</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end breadcrumbs-->
+                    </div>
+                    <div class="filter">
+                        <div class="container">
+                            <div class="filter__header">
+                                <p class="filter__title">Фильтр</p>
+                                <p class="filter__desc"> Выберите тип и производителя полуприцепа</p><a class="filter__toggle" href="#"><img
+                                        src="assets/files/img/icons/icon-plus-circle.svg"></a>
+                            </div>
+                            <div class="filter__row">
+                                <ul class="filter__left">
+                                    <li><span>Тип полуприцепа</span></li>
+                                </ul>
+                                <ul class="filter__list">
+                                    <li class="first level1 odd">
+                                        <a href="/sortimentovozy.html">Полуприцепы сортиментовозы</a>
+                                    </li><li class="level1 even">
+                                        <a href="/kontejnerovozy.html">Полуприцепы контейнеровозы</a>
+                                    </li><li class="level1 odd">
+                                        <a href="/tentovye-polupricepy.html">Тентовые полуприцепы</a>
+                                    </li><li class="level1 even">
+                                        <a href="/bortovye-polupricepy.html">Бортовые полуприцепы</a>
+                                    </li><li class="level1 odd">
+                                        <a href="/polupricepy-zernovozy.html">Полуприцепы зерновозы</a>
+                                    </li><li class="level1 even">
+                                        <a href="/polupricepy-tyazhelovozy.html">Полуприцепы тяжеловозы тралы</a>
+                                    </li><li class="level1 odd">
+                                        <a href="/polupricepy-samosvaly.html">Полуприцепы самосвалы</a>
+                                    </li><li class="level1 even">
+                                        <a href="/polupricepy-refrizheratory.html">Полуприцепы рефрижераторы (изотермы)</a>
+                                    </li><li class="last level1 odd">
+                                        <a href="/polupricepy-shhepovozy.html">Полуприцепы щеповозы</a>
+                                    </li>
+                                </ul>
+                                <!-- brands-->
+                                <div class="brands" style="display:none;">
+                                    <div class="brands__label"> <span>Производитель</span></div>
+                                    <ul class="brands__list">
+
+                                    </ul>
+                                </div>
+                                <!-- end brands-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-60 text-block">
+                        <div class="container">
+                            <div class="text-block__row">
+                                <div class="text-block__content">
+                                    <h1>Бортовые полуприцепы</h1>
+                                    <div class="page-content">
+                                        <p>Бортовые полуприцепы&nbsp;— универсальная техника для&nbsp;перевозки генеральных грузов, строительных материалов, металлопроката
+                                            и&nbsp;оборудования. Открытая платформа с&nbsp;откидными бортами обеспечивает удобную погрузку с&nbsp;трёх сторон. Предлагаем
+                                            полуприцепы ведущих российских производителей: <a href="#">Тонар</a>, <a href="#">Braver</a>, <a href="#">SteelBear</a>, <a
+                                                href="#">ИнтерПрицеп</a>. В&nbsp;наличии модели грузоподъёмностью от&nbsp;20&nbsp;до&nbsp;40&nbsp;тонн, длиной платформы 12,
+                                            13.6&nbsp;и&nbsp;16&nbsp;метров. Изготовим под&nbsp;заказ с&nbsp;нужной комплектацией.</p>
+                                    </div>
+                                </div>
+                                <div class="catalog-item">
+                                    <div class="catalog__models">
+                                        <span>9 моделей</span>
+                                    </div>
+                                    <div class="catalog__img">
+                                        <img src="img/new/category-2.png" alt="Полуприцепы сортиментовозы">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="catalog__top">
+                            <h2>Модели бортовых полупрцепов</h2>
+                            <div class="dropdown radio-select dropdown--sort" aria-expanded="false">
+                                <div class="dropdown__header">
+                                    <span>По умолчанию</span>
+                                    <svg><use href="img/icons/sprite.svg#arr-down"></use></svg>
+                                </div>
+                                <div class="dropdown__body">
+                                    <div class="custom-scroll dropdown__options">
+                                        <label>
+                                            <input type="radio" name="sort" checked>
+                                            <span>По умолчанию</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="sort">
+                                            <span>Сначала в наличии</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="sort">
+                                            <span>Цена: сначала дешевле</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="sort">
+                                            <span>Цена: сначала дороже</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="sort">
+                                            <span>По названию (А-Я)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__row">
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                        </div>
+                    </div>
+                </section>
+                <%- include("partials/geo-map.ejs") %>
+                <%- include("partials/faq-product.ejs", {title: "Часто задаваемые вопросы"}) %>
+                <!-- instock-->
+                <section class="mb-120 instock">
+                    <div class="container">
+                        <h2 class="instock__title">Похожие модели</h2>
+                        <div class="instock__row">
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                        </div>
+                    </div>
+                </section>
+                <!--catalog-->
+                <section class="mb-120 catalog">
+                    <div class="container">
+                        <h2 class="category__title">Связанные категории</h2>
+                        <div class="catalog__row">
+                            <a class="catalog__item" href="sortimentovozy.html">
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Полуприцепы сортиментовозы"
+                                        title="Полуприцепы сортиментовозы">
+                                </div>
+                                <p class="catalog__name">Полуприцепы сортиментовозы</p>
+                                <p class="catalog__desc">Для транспортировки различного вида сортимента: лесоматериалы, трубопрокатная продукция</p>
+                            </a>
+                            <a class="catalog__item" href="kontejnerovozy.html">
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Полуприцепы контейнеровозы"
+                                        title="Полуприцепы контейнеровозы">
+                                </div>
+                                <p class="catalog__name">Полуприцепы контейнеровозы</p>
+                                <p class="catalog__desc">Для транспортировки контейнеров различной модификации от 20 до 45 футов</p>
+                            </a>
+                            <a class="catalog__item" href="tentovye-polupricepy.html">
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Тентовые полуприцепы" title="Тентовые полуприцепы">
+                                </div>
+                                <p class="catalog__name">Тентовые полуприцепы</p>
+                                <p class="catalog__desc">Для транспортировки различных видов груза</p>
+                            </a>
+                        </div>
+                        <div class="sec-bottom"><a class="text-btn" href="#">Смотреть все категории</a></div>
+                    </div>
+                </section>
+                <%- include('partials/cta-block.ejs', {
+                title: 'Техника в наличии',
+                text: `<p>Часть бортовых полуприцепов доступна к&nbsp;отгрузке со&nbsp;склада в течение 1–3 рабочих дней. Не нужно ждать — забирайте сразу.</p>`,
+                btns: `<a class="btn main-btn" href="#">Смотреть технику в наличии</a>`,
+                img: 'cta',
+                info: true
+                }) %>
+            </main>
+            <%- include("partials/footer.ejs") %>
+        </div>
+        <%- include("partials/modals.ejs") %>
+        <%- include("partials/js.ejs") %>
+
+    </body>
+</html>

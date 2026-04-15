@@ -1,0 +1,93 @@
+.company__nav li {
+  position: relative;
+  z-index: 2;
+}
+.company__nav ul li a,.company__nav ul li span {
+  font-size: 18px;
+  font-weight: 600
+}
+.company__nav li span {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.company__nav li span:after {
+  content: "";
+  display: block;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 15px;
+  flex: 0 0 15px;
+  width: 15px;
+  height: 9px;
+  background: url(/assets/files/img/icons/chevron-drop.svg) center/contain no-repeat;
+  margin-left: 7px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.company__nav li:hover span:after {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.company__nav li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+.company__nav li ul {
+  display: block;
+  padding: 10px 0;
+  position: absolute;
+  top: calc(100% - 15px);
+  left: 0;
+  width: 100%;
+  border-radius: 16px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.company__nav li ul li {
+  padding: 10px !important;
+  border-bottom: 0;
+}
+
+.company__nav li ul li a {
+  font-size: 16px
+  padding: 0;
+  color: #808080;
+}
+
+.company__nav li ul li a:hover {
+  color: #000;
+}
+
+.company .manuf {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+@media screen and (max-width: 991px) {
+	.company__nav ul li {
+		padding-right: 20px
+	}
+	.company__nav ul li:last-child {
+		padding-right: 0
+	}
+	.company__nav ul li a,.company__nav ul li span {
+       font-size: 15px;
+    }
+	.company__nav li ul li a {
+      font-size: 14px
+    }
+}

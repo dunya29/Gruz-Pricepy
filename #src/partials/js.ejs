@@ -1,0 +1,47 @@
+<script>
+  document.addEventListener("DOMContentLoaded",function(){function e(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,function(e){const t=16*Math.random()|0,n="x"===e?t:3&t|8;return n.toString(16)})}function t(e,t,n){const o=new Date;o.setTime(o.getTime()+24*n*60*60*1e3);const i="; expires="+o.toUTCString();document.cookie=e+"="+(t||"")+i+"; path=/"}function n(e){const t=e+"=",n=document.cookie.split(";");for(let e=0;e<n.length;e++){let o=n[e];for(;" "===o.charAt(0);)o=o.substring(1,o.length);if(0===o.indexOf(t))return o.substring(t.length,o.length)}return null}let o=localStorage.getItem("userID")||n("userID");o||(o=e(),localStorage.setItem("userID",o),t("userID",o,365));const i=document.getElementById("ls");i&&(i.value=o)});
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                let hasScrolled = false, totalScrollDistance = 0, scrollEvents = 0;
+                let hasMouseMoved = false, mouseMovements = 0;
+                let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+                window.addEventListener("scroll", function() {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    totalScrollDistance += Math.abs(scrollTop - lastScrollTop);
+                    lastScrollTop = scrollTop;
+                    scrollEvents++;
+                    hasScrolled = true;
+                    updateInput();
+                });
+
+                window.addEventListener("mousemove", function() {
+                    hasMouseMoved = true;
+                    mouseMovements++;
+                    updateInput();
+                });
+
+                function updateInput() {
+                    const inputField = document.getElementById("pf");
+                    if (inputField) {
+                        inputField.value = `hS=${hasScrolled}, tSD=${totalScrollDistance}, sE=${scrollEvents}, hM=${hasMouseMoved}, mM=${mouseMovements}`;
+                    }
+                }
+            });
+
+        </script>
+        <!-- end modal-->
+        <script src="js/jquery.3.4.1.min.js"></script>
+        <script src="js/libs.min.js"></script>
+        <script src="js/scripts14122020.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/custom2.js"></script>
+        <script>
+            $(function() {$(".city_name").click(function() {$(".drop_city").toggle("fast");});});
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded",function(){const e=btoa(`${window.screen.width}x${window.screen.height}`),t=document.getElementById("fp");t&&(t.value=e)});
+        </script>
+         <script src="js/scripts2026.js"></script>

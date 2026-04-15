@@ -1,0 +1,250 @@
+<html lang="ru">
+    <%- include("partials/head.ejs") %>
+    <body>
+        <div class="wrap">
+
+            <%- include("partials/header.ejs") %>
+            <main>
+                <section class="mb-120 catalog">
+                    <div class="container">
+                        <!-- breadcrumbs-->
+                        <div class="breadcrumbs">
+                            <ul itemscope itemtype="http://schema.org/BreadcrumbList">
+
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><meta itemprop="position" content="1">
+                                    <a href="/" title="Главная" itemprop="item">
+                                        <span itemprop="name">Грузовые Прицепы</span>
+                                    </a>
+                                </li>
+                                <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                                    <meta itemprop="position" content="2">
+                                    <span itemprop="item">В наличии</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- end breadcrumbs-->
+                    </div>
+                    <div class="mb-60 text-block">
+                        <div class="container">
+                            <h1>Техника в наличии</h1>
+                            <div class="page-content">
+                                <p>Полуприцепы в&nbsp;наличии на&nbsp;складе с&nbsp;отгрузкой в&nbsp;течение 1–3&nbsp;рабочих дней. Не&nbsp;нужно ждать изготовления&nbsp;—
+                                    забирайте технику сразу. В&nbsp;наличии бортовые, тентовые, контейнеровозы, тралы, самосвалы, зерновозы и&nbsp;другие типы полуприцепов
+                                    от&nbsp;ведущих производителей: Тонар, Braver, SteelBear, ИнтерПрицеп. Все&nbsp;модели прошли предпродажную подготовку и&nbsp;готовы
+                                    к&nbsp;эксплуатации. Доставка по&nbsp;всей России транспортными компаниями. Оформляем лизинг и&nbsp;кредит.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="cat-filter">
+                            <form class="cat-filter__form">
+                                <button type="button" class="btn catFilter-btn js-modal-show" data-target="#catFilter-mod">Фильтры<span></span></button>
+                                <div class="modal main-mod js-modal" id="catFilter-mod">
+                                    <div class="modal__overlay">
+                                        <div class="modal__content">
+                                            <button type="button" class="close-btn js-modal-close">
+                                                <svg>
+                                                    <use href="img/icons/sprite.svg#icon-close"></use>
+                                                </svg>
+                                            </button>
+                                            <div class="modal__top">
+                                                <h2>Фильтры</h2>
+                                            </div>
+                                            <div class="cat-filter__items">
+                                                <div class="dropdown" aria-expanded="false">
+                                                    <div class="dropdown__header">
+                                                        <span>Тип полуприцепа</span>
+                                                        <svg><use href="img/icons/sprite.svg#arr-down"></use></svg>
+                                                    </div>
+                                                    <div class="dropdown__body">
+                                                        <div class="custom-scroll dropdown__options">
+                                                            <label>
+                                                                <input type="radio" value="all" name="trailer-type" checked data-id="1" data-name="Тип полуприцепа">
+                                                                <span>Все типы</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="trailer-type" data-id="2" data-name="Тип полуприцепа">
+                                                                <span>Полуприцепы сортиментовозы</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="trailer-type" data-id="3" data-name="Тип полуприцепа">
+                                                                <span>Полуприцепы контейнеровозы</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="trailer-type" data-id="4" data-name="Тип полуприцепа">
+                                                                <span>Тентовые полуприцепы</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="trailer-type" data-id="5" data-name="Тип полуприцепа">
+                                                                <span>Бортовые полуприцепы</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="trailer-type" data-id="6" data-name="Тип полуприцепа">
+                                                                <span>Полуприцепы зерновозы</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="trailer-type" data-id="7" data-name="Тип полуприцепа">
+                                                                <span>Полуприцепы тяжеловозы тралы</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="trailer-type" data-id="8" data-name="Тип полуприцепа">
+                                                                <span>Полуприцепы самосвалы</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="trailer-type" data-id="9" data-name="Тип полуприцепа">
+                                                                <span>Полуприцепы рефрижераторы (изотермы)</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="trailer-type" data-id="10" data-name="Тип полуприцепа">
+                                                                <span>Полуприцепы щеповозы</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="dropdown" aria-expanded="false">
+                                                    <div class="dropdown__header">
+                                                        <span>Производитель</span>
+                                                        <svg><use href="img/icons/sprite.svg#arr-down"></use></svg>
+                                                    </div>
+                                                    <div class="dropdown__body">
+                                                        <div class="custom-scroll dropdown__options">
+                                                            <label>
+                                                                <input value="all" type="radio" name="producer" checked data-id="11" data-name="Производитель">
+                                                                <span>Все</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="producer" data-id="12" data-name="Производитель">
+                                                                <span>Steelbear</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="producer" data-id="13" data-name="Производитель">
+                                                                <span>Тонар</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="producer" data-id="14" data-name="Производитель">
+                                                                <span>Braver</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="producer" data-id="15" data-name="Производитель">
+                                                                <span>ИнтерПрицеп</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn catFilter-reset">Сбросить фильтр</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dropdown radio-select dropdown--sort" aria-expanded="false">
+                                    <div class="dropdown__header">
+                                        <span>По умолчанию</span>
+                                        <svg><use href="img/icons/sprite.svg#arr-down"></use></svg>
+                                    </div>
+                                    <div class="dropdown__body">
+                                        <div class="custom-scroll dropdown__options">
+                                            <label>
+                                                <input type="radio" name="sort" checked data-id="16">
+                                                <span>По умолчанию</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="sort" data-id="17">
+                                                <span>Сначала в наличии</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="sort" data-id="18">
+                                                <span>Цена: сначала дешевле</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="sort" data-id="19">
+                                                <span>Цена: сначала дороже</span>
+                                            </label>
+                                            <label>
+                                                <input type="radio" name="sort" data-id="20">
+                                                <span>По названию (А-Я)</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="filter-selected">
+                                <ul class="filter-selected__items"></ul>
+                            </div>
+                            <button type="button" class="btn catFilter-reset">Сбросить фильтр<span class="btn-cross"></span></button>
+                        </div>
+                        <div class="catalog__row">
+                            <a class="catalog__item" href="sortimentovozy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Полуприцепы сортиментовозы"
+                                        title="Полуприцепы сортиментовозы">
+                                </div>
+                                <p class="catalog__name">Полуприцепы сортиментовозы</p>
+                                <p class="catalog__desc">Для транспортировки различного вида сортимента: лесоматериалы, трубопрокатная продукция</p>
+                            </a>
+                            <a class="catalog__item" href="kontejnerovozy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Полуприцепы контейнеровозы"
+                                        title="Полуприцепы контейнеровозы">
+                                </div>
+                                <p class="catalog__name">Полуприцепы контейнеровозы</p>
+                                <p class="catalog__desc">Для транспортировки контейнеров различной модификации от 20 до 45 футов</p>
+                            </a>
+                            <a class="catalog__item" href="tentovye-polupricepy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Тентовые полуприцепы" title="Тентовые полуприцепы">
+                                </div>
+                                <p class="catalog__name">Тентовые полуприцепы</p>
+                                <p class="catalog__desc">Для транспортировки различных видов груза</p>
+                            </a>
+                            <a class="catalog__item" href="bortovye-polupricepy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Бортовые полуприцепы" title="Бортовые полуприцепы">
+                                </div>
+                                <p class="catalog__name">Бортовые полуприцепы</p>
+                                <p class="catalog__desc">Для транспортировки различных видов груза</p>
+                            </a>
+                            <a class="catalog__item" href="polupricepy-zernovozy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Полуприцепы зерновозы" title="Полуприцепы зерновозы">
+                                </div>
+                                <p class="catalog__name">Полуприцепы зерновозы</p>
+                                <p class="catalog__desc">Для транспортировки зерна и других сыпучих пищевых грузов</p>
+                            </a>
+                            <a class="catalog__item" href="polupricepy-tyazhelovozy.html">
+                                <div class="catalog__models">
+                                    <span>12 моделей</span>
+                                </div>
+                                <div class="catalog__img">
+                                    <img src="img/new/category-1.png" alt="Полуприцепы тяжеловозы тралы" title="Полуприцепы тяжеловозы тралы">
+                                </div>
+                                <p class="catalog__name">Полуприцепы тяжеловозы тралы</p>
+                                <p class="catalog__desc">Для транспортировки различной строительной техники и негабаритных грузов</p>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <%- include("partials/geo-map.ejs") %>
+                <%- include("partials/faq.ejs", {title: "Часто задаваемые вопросы"}) %>
+            </main>
+            <%- include("partials/footer.ejs") %>
+        </div>
+        <%- include("partials/modals.ejs") %>
+        <%- include("partials/js.ejs") %>
+
+    </body>
+</html>
