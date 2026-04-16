@@ -292,13 +292,17 @@ $(function() {
      *  Плавный скрол
      */
 
-    $('.js-anchor').click(function() {
+    $('.js-anchor').click(function () {
         var elementClick = $(this).attr('href');
-        var destination = $(elementClick).offset().top;
-        $('html,body').animate({ scrollTop: destination }, 1100);
+        var headerHeight = $('.header').outerHeight(); // класс шапки
+        var destination = $(elementClick).offset().top - headerHeight - 10;
+
+        $('html, body').animate({
+            scrollTop: destination
+        }, 1100);
+
         return false;
     });
-
     /*
      *  фиксированный хедер
      */

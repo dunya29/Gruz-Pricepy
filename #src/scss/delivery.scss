@@ -105,19 +105,22 @@
     gap: 8px;
     margin: 0;
     li {
-        font-family: "Circe Bold";
-        font-size: 14px;
-        font-weight: 700;
-        text-transform: uppercase;
         list-style-type: none;
-        padding: 5px 16px;
-        border-radius: 20px;
-        border: 1px solid #24202033;
     }
+}
+.del-p__region ul a,
+.del-city__products li {
+    font-family: "Circe Bold";
+    font-size: 14px;
+    font-weight: 700;
+    color: #242020;
+    text-transform: uppercase;
+    display: block;
+    padding: 5px 16px;
+    border-radius: 20px;
+    border: 1px solid #24202033;
     @media (max-width: 991.98px) {
-        li {
-            font-size: 12px;
-        }
+        font-size: 12px;
     }
 }
 .del-region {

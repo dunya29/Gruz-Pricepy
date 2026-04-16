@@ -1506,11 +1506,17 @@ a {
 
 .del-p__region ul li,
 .del-city__products li {
+  list-style-type: none;
+}
+
+.del-p__region ul a,
+.del-city__products li {
   font-family: "Circe Bold";
   font-size: 14px;
   font-weight: 700;
+  color: #242020;
   text-transform: uppercase;
-  list-style-type: none;
+  display: block;
   padding: 5px 16px;
   border-radius: 20px;
   border: 1px solid rgba(36, 32, 32, 0.2);
@@ -1775,7 +1781,7 @@ a {
     display: none;
   }
 
-  .del-p__region ul li,
+  .del-p__region ul a,
   .del-city__products li {
     font-size: 12px;
   }
