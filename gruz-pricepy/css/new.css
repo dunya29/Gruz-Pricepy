@@ -1471,6 +1471,10 @@ a {
   color: #2b2f40;
 }
 
+.del-p .text-btn:hover {
+  color: #f13d3d;
+}
+
 .del-p .page-content {
   max-width: 734px;
 }

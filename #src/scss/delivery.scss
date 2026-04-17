@@ -18,6 +18,9 @@
     }
     .text-btn {
         color: #2b2f40;
+        &:hover {
+            color: #f13d3d;
+        }
     }
     .page-content {
         max-width: 734px;
