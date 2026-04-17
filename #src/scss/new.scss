@@ -333,11 +333,6 @@
     &__title {
         margin-bottom: 8px;
     }
-    &__left {
-        @media (max-width: 991.98px) {
-            margin-bottom: 20px;
-        }
-    }
     &__desc {
         p {
             font-size: 14px;
@@ -358,7 +353,7 @@
     &__text {
         margin-bottom: 10px;
     }
-    &__links {
+    &__actions {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -366,6 +361,9 @@
         a {
             color: #2b2f40;
             margin-bottom: 8px;
+            &:hover {
+                color: #f13d3d;
+            }
         }
         @media (max-width: 991.98px) {
             margin-bottom: 20px;
@@ -399,6 +397,9 @@
         }
         &__link {
             display: inline-block;
+        }
+        &__table {
+            margin-bottom: 40px;
         }
     }
     @media (max-width: 575.98px) {

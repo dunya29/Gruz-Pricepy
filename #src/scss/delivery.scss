@@ -153,6 +153,7 @@
     &__contacts {
         max-width: 248px;
         display: flex;
+        align-items: flex-start;
         flex-direction: column;
         .main-btn {
             font-size: 12px;
