@@ -116,6 +116,11 @@
             padding: 5px 16px;
             border-radius: 20px;
             border: 1px solid #24202033;
+            transition: all 0.3s linear;
+            &:hover {
+                color: #f13d3d;
+                border-color: #f13d3d;
+            }
             @media (max-width: 991.98px) {
                 font-size: 12px;
             }
@@ -182,5 +187,17 @@
         height: 16px;
         fill: #b3b3b3;
         margin-right: 6px;
+    }
+}
+a.item-contact {
+    transition: all 0.3s linear;
+    svg {
+        transition: all 0.3s linear;
+    }
+    &:hover {
+        color: #f13d3d;
+        svg {
+            fill: #f13d3d;
+        }
     }
 }

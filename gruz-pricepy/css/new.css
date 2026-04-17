@@ -999,12 +999,6 @@ a {
   transform: translateY(-50%) rotate(-45deg);
 }
 
-.slick-track {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-}
-
 .product__row {
   min-width: 0;
   display: grid;
@@ -1567,6 +1561,14 @@ a {
   padding: 5px 16px;
   border-radius: 20px;
   border: 1px solid rgba(36, 32, 32, 0.2);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.del-p__region ul li a:hover,
+.del-city__products li a:hover {
+  color: #f13d3d;
+  border-color: #f13d3d;
 }
 
 .del-region__title {
@@ -1633,6 +1635,24 @@ a {
   height: 16px;
   fill: #b3b3b3;
   margin-right: 6px;
+}
+
+a.item-contact {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+a.item-contact svg {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+a.item-contact:hover {
+  color: #f13d3d;
+}
+
+a.item-contact:hover svg {
+  fill: #f13d3d;
 }
 
 @media (min-width: 667.98px) {
