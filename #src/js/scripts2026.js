@@ -146,31 +146,3 @@ if (catFilter && catFilterSelected) {
         }, 300)
     })
 }
-
-
-const $slider = $('.instock__slider')
-
-if (!$slider.hasClass('slick-initialized')) {
-    $slider.slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        dots: false,
-        focusOnSelect: true,
-        prevArrow: $('.instock .nav-btns .prev'),
-        nextArrow: $('.instock .nav-btns .next'),
-        responsive: [
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2
-                }
-            },
-            {
-                breakpoint: 575,
-                settings: {
-                    slidesToShow: 1
-                }
-            }
-        ]
-    })
-}

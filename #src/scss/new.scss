@@ -26,6 +26,20 @@
         overflow: hidden;
     }
 }
+.recom {
+    &-bottom {
+        text-align: center;
+    }
+    @media screen and (max-width: 991px) {
+        margin-bottom: 50px;
+        &-bottom {
+            width: calc(100% - 30px);
+            margin-left: 15px;
+            margin-right: 15px;
+            text-align: right;
+        }
+    }
+}
 .category__desc {
     font-size: 18px;
     line-height: 1.3;
@@ -299,11 +313,106 @@
         transform: translateY(-50%) rotate(-45deg);
     }
 }
-.product__left {
+.slick-track {
+    display: flex !important;
+}
+.product {
+    &__row {
+        min-width: 0;
+        display: grid;
+        grid-template-columns: 56% 1fr;
+        gap: 0 30px;
+        align-items: start;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &__left,
+    &__right {
+        width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    &__title {
+        margin-bottom: 8px;
+    }
+    &__left {
+        @media (max-width: 991.98px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__desc {
+        p {
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+    &__table,
+    &__btns,
+    &__cost,
+    &__link,
+    &__stock,
+    &__text {
+        margin-left: 0;
+    }
+    &__cost,
+    &__link,
+    &__stock,
+    &__text {
+        margin-bottom: 10px;
+    }
+    &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 32px;
+        a {
+            color: #2b2f40;
+            margin-bottom: 8px;
+        }
+        @media (max-width: 991.98px) {
+            margin-bottom: 20px;
+        }
+    }
+    &__table {
+        width: 100%;
+        tr {
+            height: auto;
+        }
+        td {
+            padding: 7px 12px;
+        }
+    }
+    &__btns {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    @media (min-width: 991.98px) {
+        &__top {
+            grid-column: 2/3;
+            margin-bottom: 12px;
+        }
+        &__left {
+            grid-area: 1/1/3/2;
+        }
+    }
     @media (max-width: 991.98px) {
-        margin-bottom: 20px;
+        &__row {
+            grid-template-columns: 1fr;
+        }
+        &__link {
+            display: inline-block;
+        }
+    }
+    @media (max-width: 575.98px) {
+        &__price,
+        &__chars {
+            width: 100%;
+            max-width: 100%;
+        }
     }
 }
+
 .article__date {
     font-size: 14px;
     font-weight: 500;

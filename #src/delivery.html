@@ -128,12 +128,12 @@
                                     <div class="del-city__main">
                                         <h4>Доставляем в Москву</h4>
                                         <ul class="del-city__products">
-                                            <li>Полуприцепы-тентованные</li>
-                                            <li>Контейнеровозы</li>
-                                            <li>Сортиментовозы</li>
-                                            <li>Самосвальные полуприцепы</li>
-                                            <li>Рефрижераторы</li>
-                                            <li>Низкорамные тралы</li>
+                                            <li><a href="#">Полуприцепы-тентованные</a></li>
+                                            <li><a href="#">Контейнеровозы</a></li>
+                                            <li><a href="#">Сортиментовозы</a></li>
+                                            <li><a href="#">Самосвальные полуприцепы</a></li>
+                                            <li><a href="#">Рефрижераторы</a></li>
+                                            <li><a href="#">Низкорамные тралы</a></li>
                                         </ul>
                                         <a href="#" class="text-btn">Смотреть технику с отгрузкой в ваш регион</a>
                                     </div>
@@ -168,11 +168,11 @@
                                     <div class="del-city__main">
                                         <h4>Доставляем в Тверь</h4>
                                         <ul class="del-city__products">
-                                            <li>Полуприцепы-тентованные</li>
-                                            <li>Самосвальные полуприцепы</li>
-                                            <li>Сортиментовозы</li>
-                                            <li>Рефрижераторы</li>
-                                            <li>Низкорамные тралы</li>
+                                            <li><a href="#">Полуприцепы-тентованные</a></li>
+                                            <li><a href="#">Самосвальные полуприцепы</a></li>
+                                            <li><a href="#">Сортиментовозы</a></li>
+                                            <li><a href="#">Рефрижераторы</a></li>
+                                            <li><a href="#">Низкорамные тралы</a></li>
                                         </ul>
                                         <a href="#" class="text-btn">
                                             Смотреть технику с отгрузкой в ваш регион
@@ -212,12 +212,12 @@
                                     <div class="del-city__main">
                                         <h4>Доставляем в Воронеж</h4>
                                         <ul class="del-city__products">
-                                            <li>Полуприцепы-тентованные</li>
-                                            <li>Контейнеровозы</li>
-                                            <li>Сортиментовозы</li>
-                                            <li>Самосвальные полуприцепы</li>
-                                            <li>Рефрижераторы</li>
-                                            <li>Низкорамные тралы</li>
+                                            <li><a href="#">Полуприцепы-тентованные</a></li>
+                                            <li><a href="#">Контейнеровозы</a></li>
+                                            <li><a href="#">Сортиментовозы</a></li>
+                                            <li><a href="#">Самосвальные полуприцепы</a></li>
+                                            <li><a href="#">Рефрижераторы</a></li>
+                                            <li><a href="#">Низкорамные тралы</a></li>
                                         </ul>
                                         <a href="#" class="text-btn">
                                             Смотреть технику с отгрузкой в ваш регион
@@ -273,26 +273,11 @@
                 <!-- instock-->
                 <section class="mb-120 instock">
                     <div class="container">
-                        <div class="sec-top">
-                            <div class="sec-top__row">
-                                <h2 class="instock__title">Техника готова к отгрузке</h2>
-                                <div class="nav-btns">
-                                    <button class="btn prev" type="button">
-                                        <svg><use href="img/icons/sprite.svg#chevron-l"></use></svg>
-                                    </button>
-                                    <button class="btn next" type="button">
-                                        <svg><use href="img/icons/sprite.svg#chevron-r"></use></svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="instock__slider">
-                            <%- include("partials/instock-item.ejs", { slider: true }) %>
-                            <%- include("partials/instock-item.ejs", { slider: true }) %>
-                            <%- include("partials/instock-item.ejs", { slider: true }) %>
-                            <%- include("partials/instock-item.ejs", { slider: true }) %>
-                            <%- include("partials/instock-item.ejs", { slider: true }) %>
-                            <%- include("partials/instock-item.ejs", { slider: true }) %>
+                        <h2 class="instock__title">Техника готова к отгрузке</h2>
+                        <div class="instock__row">
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
+                            <%- include("partials/instock-item.ejs") %>
                         </div>
                         <div class="sec-bottom"><a class="text-btn" href="#">Смотреть все </a></div>
                     </div>
