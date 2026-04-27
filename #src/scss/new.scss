@@ -792,26 +792,32 @@
         width: 100%;
     }
 }
+.faq,
+.del-region {
+    .accord__title {
+        padding: 23px 30px;
+        height: auto;
+        @media (max-width: 575.98px) {
+            padding: 16px;
+        }
+    }
+}
 .faq {
-    .page-content p {
-        max-width: 734px;
-    }
-    .accord {
-        counter-reset: faq;
-    }
+    counter-reset: faq;
     .accord__item {
         counter-increment: faq;
     }
     .accord__title {
-        padding: 23px 30px;
-        height: auto;
-        span::before {
-            content: counter(faq) ". ";
-            margin-right: 5px;
+        span {
+            display: inline-flex;
+            gap: 5px;
+            &::before {
+                content: counter(faq) ".";
+            }
         }
-        @media (max-width: 575.98px) {
-            padding: 16px;
-        }
+    }
+    .page-content p {
+        max-width: 734px;
     }
 }
 .stat {
