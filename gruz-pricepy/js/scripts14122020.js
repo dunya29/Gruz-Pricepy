@@ -292,15 +292,17 @@ $(function() {
      *  Плавный скрол
      */
 
-    $('.js-anchor').click(function () {
+    $('.js-anchor').click(function (e) {
+        e.preventDefault();
         var elementClick = $(this).attr('href');
         var headerHeight = $('.header').outerHeight(); // класс шапки
         var destination = $(elementClick).offset().top - headerHeight - 10;
-
+        if ($(elementClick).hasClass('accord__item') && !$(elementClick).hasClass('open')) {
+            $(elementClick).find('.accord__title').click();
+        }
         $('html, body').animate({
             scrollTop: destination
         }, 1100);
-
         return false;
     });
     /*
